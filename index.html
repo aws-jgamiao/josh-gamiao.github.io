@@ -14,7 +14,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-	<title>Josh Gamiao - Portfolio</title>
+	<title>Josh-Gamiao - Portfolio</title>
 	
 </head>
 <body id="landing">
@@ -48,18 +48,26 @@
 		<div class="row">
 			<!-- About Me Section -->
 			<div class="col-12 p-0">
-				<div class="container-fluid text-dark min-vh-100 p-3" id="aboutme_section">	
-					<div class="card-deck my-5 justify-content-center">
-						<div class="card col-md-8 col-lg-4  bg-transparent border-0">
-							<img src="images/profile-logo.jpg" class="rounded-circle card-img-top" alt="project1">
-							<div class="card-body">
-								<h1>Joshua Gamiao</h5>
-								<h3 class="p-5 pb-md-5">Software Developer</h5>
-								<p class="card-text text-center">Hello World! My name is Joshua Gamiao. A 24-years-old Software Developer with over 2 years of experience in full-stack development.</p>				
-							</div>												
-						</div>											
-					</div>					
-				</div>		
+				<div class="container-fluid text-dark min-vh-100 d-flex justify-content-center align-items-center p-3" id="aboutme_section">    
+					<div class="card-deck my-5 d-flex justify-content-center">
+						<div class="card col-md-8 col-lg-8 bg-transparent border-0">
+							<div class="row">
+								<div class="col-md-6 text-center">
+									<img src="images/profile-logo.jpg" class="rounded-circle card-img-top" alt="project1">
+								</div>
+								<div class="col-md-6 text-center">
+									<div class="card-body">
+										<h1>Joshua Gamiao</h1>
+										<h3 class="p-5 pb-md-5">Software Developer</h3>
+										<p class="card-text">Hello World! My name is Joshua Gamiao. A 24-years-old Software Developer with over 2 years of experience in full-stack development. As a Software Developer with over 2 years of experience in full-stack development, I have a proven track record of building robust web applications from the ground up. My journey in tech began with a fascination for how software can solve real-world problems, which led me to master both front-end and back-end technologies.<br><br>
+
+											I excel in creating seamless user interfaces with React, while also engineering scalable server-side solutions using Node.js. My commitment to clean, maintainable code and agile practices ensures that I deliver high-quality software that aligns with the user needs and business goals. In my current role, I've contributed to a project that aimed to convert a property management Windows Desktop Application from C# .Net 4.3 and Java 1.4 to ReactTS and ExpressTS where member companies and stores can register their property listings that can be searched, viewed, inquired and contracted by the consumers.</p>              
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- Projects Section -->
 			<div class="col-12 p-0">
@@ -196,20 +204,17 @@
 						</div>
 						<div class="col-md-6 my-4">
 							<h4 class="text-center my-4">Message Me</h4>
-							<form>
-							    <div class="form-group" bis_skin_checked="1">
-							        <label>Full Name</label>
-							        <input type="text" class="form-control">
-							    </div>
+							<form action="https://formspree.io/f/mgegnekj"
+							method="POST">
 							    <div class="form-group" bis_skin_checked="1">
 							        <label>Email Address</label>
-							        <input type="email" class="form-control">
+							        <input input type="email" name="email" class="form-control">
 							    </div>
 							    <div class="form-group" bis_skin_checked="1">
 							        <label>Message</label>
-							        <textarea class="form-control"></textarea>
+							        <textarea class="form-control" name="message"></textarea>
 							    </div>
-							    <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-light btn-block">Send Email</button>
+							    <button type="submit" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-light btn-block">Send Email</button>
 
 							    <!-- Modal -->
 								  <div class=" text-dark modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
