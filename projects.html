@@ -31,18 +31,18 @@
         }
 
         .card {
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to the cards */
-			transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
-			border-radius: 10px; /* Adds rounded corners to cards */
-			overflow: hidden; /* Prevent image overflow */
-		}
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to the cards */
+            transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+            border-radius: 10px; /* Adds rounded corners to cards */
+            overflow: hidden; /* Prevent image overflow */
+        }
 
-		.card-img-top {
-			width: 100%; /* Make sure the image takes up the full width */
-			height: 200px; /* Set a fixed height for the image */
-			object-fit: cover; /* Make the image cover the container without distortion */
-			border-radius: 10px 10px 0 0; /* Ensures the top corners of the image match the card border radius */
-		}
+        .card-img-top {
+            width: 100%; /* Make sure the image takes up the full width */
+            height: 200px; /* Set a fixed height for the image */
+            object-fit: cover; /* Make the image cover the container without distortion */
+            border-radius: 10px 10px 0 0; /* Ensures the top corners of the image match the card border radius */
+        }
 
         .card:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hover effect with deeper shadow */
@@ -74,6 +74,10 @@
             .card-footer {
                 padding: 0.5rem; /* Adjust footer padding for small screens */
             }
+
+            .card-columns {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Smaller card size on mobile */
+            }
         }
     </style>
 </head>
@@ -98,11 +102,11 @@
         <!-- Projects Section -->
         <div class="col-12 p-0">
             <div class="container-fluid text-dark min-vh-100 p-3 p-md-5" id="projects_section">
-                <h1 class="mt-5 mb-1 text-center text-white">React projects</h1>
+                <h1 class="mt-5 mb-1 text-center text-white">Live projects</h1>
                 <div class="row my-5 justify-content-center">
                     <!-- Card Columns (Flexbox) -->
-                    <div class="card-columns">
-                        <div class="card">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="card mx-2" style="max-width: 18rem; flex: 1 0 100%; max-width: 300px;">
                             <img src="images/weather-app.png" class="card-img-top" alt="project1">
                             <div class="card-body">
                                 <h5>Weather App</h5>
@@ -114,10 +118,10 @@
                                 </p>
                             </div>
                             <div class="card-footer bg-white">
-								<a href="https://aws-jgamiao.github.io/weather-app/" class="card-link" target="_blank">Link To Project</a>
-							</div>
+                                <a href="https://aws-jgamiao.github.io/weather-app/" class="card-link" target="_blank">Link To Project</a>
+                            </div>
                         </div>
-                        <div class="card">
+                        <div class="card mx-2" style="max-width: 18rem; flex: 1 0 100%; max-width: 300px;">
                             <img src="images/finance-tracker.png" class="card-img-top" alt="project1">
                             <div class="card-body">
                                 <h5>Finance Tracker</h5>
@@ -129,20 +133,76 @@
                                 </p>
                             </div>
                             <div class="card-footer bg-white">
-								<a href="https://aws-jgamiao.github.io/finance-tracker/" class="card-link" target="_blank">Link To Project</a>
-							</div>
+                                <a href="https://aws-jgamiao.github.io/finance-tracker/" class="card-link" target="_blank">Link To Project</a>
+                            </div>
                         </div>
-						
                     </div>
                 </div>
             </div>        
         </div>
+        
+        <div class="col-12 p-0">
+            <div class="container-fluid text-dark min-vh-100 p-3 p-md-5" id="projects_section">
+                <h1 class="mt-5 mb-1 text-center text-white">Freelance projects</h1>
+                <div class="row my-5 justify-content-center">
+                    <!-- Card Columns (Flexbox) -->
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="card mx-2" style="max-width: 18rem; flex: 1 0 100%; max-width: 300px;">
+                            <img src="images/Narnoo-4.png" class="card-img-top" alt="project1">
+                            <div class="card-body">
+                                <h5>Narnoo app</h5>
+                                <p class="card-text">Created a full-featured eCommerce platform for booking leisure activities and accommodations, leading both frontend and back-end development with Nuxt.js and TypeScript to deliver a seamless user experience and a reliable booking system.</p>                
+                            </div>
+                            <div class="card-footer bg-white">
+                                <p class="card-text">
+                                    <small class="text-muted">Created 9 months ago</small>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a href="Narnoo.html" class="card-link" target="_blank">Link To Project</a>
+                            </div>
+                        </div>
+                        <div class="card mx-2" style="max-width: 18rem; flex: 1 0 100%; max-width: 300px;">
+                            <img src="images/auditor-app-1.png" class="card-img-top" alt="project1">
+                            <div class="card-body">
+                                <h5>Auditor app</h5>
+                                <p class="card-text">Built a secure, audit-focused web application for financial institutions with Node.js and TypeScript, incorporating compliance features and robust data validation to enable efficient and accurate audits for banking professionals.</p>                
+                            </div>
+                            <div class="card-footer bg-white">
+                                <p class="card-text">
+                                    <small class="text-muted">Created 6 months ago</small>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a href="Auditor.html" class="card-link" target="_blank">Link To Project</a>
+                            </div>
+                        </div>
+                        <div class="card mx-2" style="max-width: 18rem; flex: 1 0 100%; max-width: 300px;">
+                            <img src="images/React-Native-UI-1.png" class="card-img-top" alt="project1">
+                            <div class="card-body">
+                                <h5>React Native app</h5>
+                                <p class="card-text">Worked on a new mobile application using React Native and Tailwind CSS to deliver a modern, responsive design and seamless user experience.</p>                
+                            </div>
+                            <div class="card-footer bg-white">
+                                <p class="card-text">
+                                    <small class="text-muted">Created 1 month ago</small>
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <a href="React-Native.html" class="card-link" target="_blank">Link To Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        
     </div>
 
     <!-- Footer Section -->
     <footer>
         <h6>Joshua Gamiao</h6>
-        <h6>© All Rights Reserved 2024</h6>
+        <h6>© All Rights Reserved 2025</h6>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
